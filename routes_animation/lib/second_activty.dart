@@ -6,11 +6,15 @@ class SecondActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Second Activity"),
+      ),
+      body: Container(
       child: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("Second Activity"),
             RaisedButton(
@@ -20,6 +24,7 @@ class SecondActivity extends StatelessWidget {
           ],
         ),
       ),
+    ),
     );
   }
 }
